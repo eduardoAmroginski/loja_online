@@ -9,4 +9,4 @@ class Roupa(Produto):
 
     def exibir_detalhes(self):
         # Usamos o get_preco() para conseguir ler o preço encapsulado!
-        print(f"👕 Roupa: {self.nome} (Tamanho: {self.tamanho}) | Preço: {self.get_preco()}€")
+        print(f"👕 Roupa: {self.nome} (Tamanho: {self.tamanho}) | Preço: R$ {self.get_preco()}")

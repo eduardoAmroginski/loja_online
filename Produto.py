@@ -8,7 +8,7 @@ class Produto:
         return self._preco
 
     def exibir_detalhes(self):
-        print(f"Produto: {self.nome} | Preço: {self._preco}€")
+        print(f"Produto: {self.nome} | Preço: R$ {self._preco}")
 
     # ==========================================
     # 🚨 GABARITO: DESAFIO 2 (Desconto Seguro) 🚨

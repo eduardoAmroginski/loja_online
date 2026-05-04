@@ -14,7 +14,7 @@ class CarrinhoDeCompras:
             # Polimorfismo em ação! Não importa se é roupa ou eletrônico.
             item.exibir_detalhes()
             total += item.get_preco()
-        print(f"💰 TOTAL A PAGAR: {total}€")
+        print(f"💰 TOTAL A PAGAR: R$ {total}")
         print("--------------------------\n")
 
     # ==========================================

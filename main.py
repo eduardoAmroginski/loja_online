@@ -28,7 +28,7 @@ def main():
             print("\n--- Cadastrando Roupa ---")
             nome = input("Nome da roupa: ")
             try:
-                preco = float(input("Preço: €"))
+                preco = float(input("Preço: R$"))
                 tamanho = input("Tamanho (P/M/G): ")
                 nova_roupa = Roupa(nome, preco, tamanho)
                 carrinho.adicionar_produto(nova_roupa)
@@ -39,7 +39,7 @@ def main():
             print("\n--- Cadastrando Eletrônico ---")
             nome = input("Nome do eletrônico: ")
             try:
-                preco = float(input("Preço: €"))
+                preco = float(input("Preço: R$"))
                 voltagem = input("Voltagem (ex: 110V/220V): ")
                 novo_eletronico = Eletronico(nome, preco, voltagem)
                 carrinho.adicionar_produto(novo_eletronico)

@@ -6,4 +6,4 @@ class Eletronico(Produto):
         self.voltagem = voltagem
 
     def exibir_detalhes(self):
-        print(f"🔌 Eletrônico: {self.nome} ({self.voltagem}V) | Preço: {self.get_preco()}€")
+        print(f"🔌 Eletrônico: {self.nome} ({self.voltagem}V) | Preço: R$ {self.get_preco()}")
