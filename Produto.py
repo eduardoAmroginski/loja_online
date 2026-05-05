@@ -1,22 +1,19 @@
+import uuid
+
+
 class Produto:
     def __init__(self, nome, preco):
+        if preco < 0:
+            raise ValueError("Erro Crítico: O preço de um produto não pode ser negativo!")
+            
+        self.id = str(uuid.uuid4()) # Gera um ID único aleatório
         self.nome = nome
-        # O _ tranca o atributo! Ninguém pode mexer de fora.
         self._preco = preco
-
+    
+    
     def get_preco(self):
         return self._preco
 
+
     def exibir_detalhes(self):
         print(f"Produto: {self.nome} | Preço: R$ {self._preco}")
-
-    # ==========================================
-    # 🚨 GABARITO: DESAFIO 2 (Desconto Seguro) 🚨
-    # ==========================================
-    def aplicar_desconto(self, percentagem):
-        if 0 <= percentagem <= 100:
-            valor_desconto = self._preco * (percentagem / 100)
-            self._preco -= valor_desconto
-            print(f"✅ Desconto de {percentagem}% aplicado com sucesso no produto {self.nome}!")
-        else:
-            print("❌ Desconto inválido!")
